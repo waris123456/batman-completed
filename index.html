@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman sword company</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <div id="hero" class="hero">
+        <img src="./Images/Untitled-1.png" alt="" class="loading" id="loading">
+        <img src="./Images/Untitled-3.png" alt="" class="statics" id="statics">
+        <img src="./Images/loading-big.png" alt="" class="loading2" id="loading2">
+        <img id="logo" onclick="logoFunc()" src="./Images/logo.png" alt="">
+        <ul id="nav-ul">
+            <li><a id="a1" href="#hero">Home</a></li>
+            <li><a id="a2" onclick="renderAbout()">About</a></li>
+            <li><a id="a3" onclick="renderProducts()">Products</a></li>
+            <li><a id="a4" onclick="renderMessage()">Message</a></li>
+        </ul>
+        <div class="about" id="about">
+            <button class="btn" onclick="hideAbout()">Back</button>
+            <!-- <img src="./Images/sword1.png" class="1" class="sword sword1" alt=""> -->
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores reiciendis officia! Illum
+                similique cupiditate non laborum laboriosam cumque debitis fugiat laudantium architecto eos? Excepturi,
+                reprehenderit a? Animi, veritatis beatae! Eum praesentium laboriosam, saepe eos sapiente error obcaecati
+                neque quidem, aut voluptas quas voluptate reprehenderit at similique perspiciatis?
+            </p>
+
+            <img class="aboutImg" src="./Images/sword4.png" alt="">
+        </div>
+        <div class="products" id="products">
+            <button class="btn" onclick="hideProducts()">Back</button>
+
+            <div class="product-card">
+                <div class="product-image PI1">
+                    <img src="./Images/sword1.png" class="img1" alt="">
+                </div>
+                <div class="product-title">Product 1</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur ad...</div>
+                <div class="product-price">$819.99</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./Images/sword2.png" class="img2" alt="">
+                </div>
+                <div class="product-title">Product 2</div>
+                <div class="product-description">Praesent id diam ac felis volutpat rutrum.</div>
+                <div class="product-price">$24.99</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./Images/sword3.png" class="img3" alt="">
+                </div>
+                <div class="product-title">Product 3</div>
+                <div class="product-description">Ut eu tortor non urna malesuada ultrices.</div>
+                <div class="product-price">$29.99</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./Images/sword4.png" class="img4" alt="">
+                </div>
+                <div class="product-title">Product 4</div>
+                <div class="product-description">Aliquam venenatis purus ut metus lo...
+                </div>
+                <div class="product-price">$14.99</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./Images/sword5.png" class="img5" alt="">
+                </div>
+                <div class="product-title">Product 5</div>
+                <div class="product-description">Fusce eget mauris at purus mollis vulpu...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+
+        </div>
+
+        <div class="message" id="message">
+            <button onclick="hideMessage()" class="btn backBtn">Back</button>
+            <form action="./index.html">
+                <input type="text" class="firstName" placeholder="Enter your first name">
+                <input type="text" class="lastName" placeholder="Enter your last name">
+                <input type="email" class="email" placeholder="Enter your email">
+                <textarea placeholder="Message" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <button class="backBtn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>
